@@ -13,7 +13,5 @@ puts "Finishing Year?"
 finishing_year = gets.to_i
 
 (starting_year..finishing_year).each do |year|
-  if (year % 4 == 0) && (!(year % 100 == 0) || (year % 400) == 0)
-    puts year
-  end
+  puts year if (year % 4 == 0) && (!(year % 100 == 0) || (year % 400) == 0)
 end
